@@ -8,14 +8,10 @@ function sockMerchant(n, ar) {
   const values = Object.values(result);
   for (let i = 0; i < values.length; i++) {
     if (values[i] >= 2) {
-      console.log(values[i]);
       let divide = Math.floor(values[i] / 2);
-      console.log(divide);
       counter += divide;
-      console.log(counter);
     }
   }
-  console.log(counter);
   return counter;
 }
 
