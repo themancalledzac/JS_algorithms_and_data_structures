@@ -4,6 +4,12 @@
 // piece of data = val
 // reference to next node - next
 
+// Singly Linked List Big O
+// Insertion -       O(1)
+// Removal - O(1) or O(N)
+// Searching -       O(N)
+// Access -          O(N)
+
 class Node {
   constructor(val) {
     this.val = val;
@@ -13,7 +19,9 @@ class Node {
 
 class SinglyLinkedList {
   constructor() {
+    // head refers to the first item in the list, the beginning of the list
     this.head = null;
+    // tail refers to the last item, or the tail of the list
     this.tail = null;
     this.length = 0;
   }
@@ -96,7 +104,7 @@ class SinglyLinkedList {
   }
   set(index, val) {
     let current = this.get(index);
-    if (current) {
+    if (current != null) {
       current.val = val;
       return true;
     } else return false;
@@ -115,7 +123,7 @@ class SinglyLinkedList {
     return true;
   }
   remove(index) {
-    if (index < 0 || index > this.length) return false;
+    if (index < 0 || index >= this.length) return false;
     if (index === this.length - 1) return this.pop();
     if (index === 0) return this.shift();
     // use the get method to access the node at the index - 1
