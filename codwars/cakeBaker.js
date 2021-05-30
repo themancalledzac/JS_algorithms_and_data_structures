@@ -96,3 +96,9 @@ const cakes = (needs, has) =>
   );
 
 // ------------------------------------------------------------------------------------------//
+
+function cakes(recipe, available) {
+  return Math.min(
+    ...Object.keys(recipe).map((e) => (available[e] / recipe[e]) >> 0)
+  );
+}
