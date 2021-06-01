@@ -1,4 +1,5 @@
 // DFS - PreOrder
+// Same time complexity as breadthFirstSearch
 
 // create a variable to store the values of nodes visited
 

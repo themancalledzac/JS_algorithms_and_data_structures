@@ -1,5 +1,9 @@
 // Using our binarySearchTree logic here
 
+// When do we use BreadthFirstSearch over DFS?
+// time complexity is the same for blth
+// narrow trees work well for memory management, space management
+
 class Node {
   constructor(value) {
     this.value = value;
