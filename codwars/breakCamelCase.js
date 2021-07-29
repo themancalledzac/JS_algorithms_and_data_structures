@@ -13,7 +13,7 @@ function solution(string) {
   return string;
 }
 
-console.log(solution("helloThereHansome"));
+console.log(solution("helloThereHansome")); // hello there hansome
 console.log(solution("identifier"));
 
 

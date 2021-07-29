@@ -40,6 +40,7 @@ function cakes(recipe, available) {
   if (Object.keys(missing).length === 0) {
     return count;
   } else {
+    console.log(`Missing the following: {missing}`);
     return missing;
   }
   // for each key:value pair, check that value in available is greater than the recipe value
